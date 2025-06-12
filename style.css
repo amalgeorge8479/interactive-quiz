@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.quiz-container {
+  background: #fff;
+  padding: 30px;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#question-text {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+#options button {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  transition: 0.2s;
+}
+
+#options button.selected {
+  background-color: #d0ebff;
+}
+
+#options button.correct {
+  background-color: #b2f2bb;
+}
+
+#options button.incorrect {
+  background-color: #ffa8a8;
+}
+
+.controls {
+  margin-top: 20px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.progress-bar {
+  background: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 20px;
+  margin-bottom: 20px;
+}
+
+.progress-fill {
+  background-color: #4caf50;
+  height: 100%;
+  width: 0%;
+  transition: width 0.3s;
+}
+
+#timer {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#result-box {
+  text-align: center;
+}
+
+#summary div {
+  text-align: left;
+  margin: 5px 0;
+}
